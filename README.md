@@ -1,4 +1,4 @@
-# Welcome to GraphQL with Apollo and React
+# Welcome to GraphQL with Apollo and React!
 
 ## Instructor
 
