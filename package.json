@@ -19,10 +19,12 @@
     "socket.io-client": "2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start-client": "react-scripts start",
+    "build-client": "react-scripts build",
+    "start-rest-server": "json-server --port 3040 --watch db.json",
+    "start-graphql-server": "npm run build-graphql-server && npm run run-graphql-server",
+    "run-graphql-server": "node ./graphql-server-dist/index",
+    "build-graphql-server": "babel graphql-server -d graphql-server-dist"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
